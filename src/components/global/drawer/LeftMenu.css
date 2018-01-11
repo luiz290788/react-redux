@@ -1,0 +1,26 @@
+.Left-menu {
+  position: absolute;
+  z-index: 10; }
+  .Left-menu__wrapper {
+    background-color: #33383B !important;
+    padding: 100px 35px; }
+    .Left-menu__wrapper button {
+      position: absolute !important;
+      right: 0;
+      top: 65px; }
+      .Left-menu__wrapper button svg {
+        color: #9badb7 !important;
+        height: 18px !important;
+        width: 18px !important; }
+    .Left-menu__wrapper span [role='menuitem'] {
+      background: none !important; }
+    .Left-menu__wrapper a {
+      color: #9badb7;
+      font-size: 14px;
+      margin-left: -5px; }
+    .Left-menu__wrapper hr {
+      background-color: #7c878e;
+      border: 0;
+      height: 1px;
+      margin: 18px 0 5px 5px;
+      width: 80%; }

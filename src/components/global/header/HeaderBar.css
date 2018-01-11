@@ -1,0 +1,53 @@
+.Header-wrapper {
+  background-color: #ffc72c !important;
+  height: 60px; }
+  .Header-wrapper .Header-icon,
+  .Header-wrapper .Header-icon-account {
+    fill: #806416 !important; }
+    .Header-wrapper .Header-icon:hover,
+    .Header-wrapper .Header-icon-account:hover {
+      fill: #402701 !important; }
+  @media screen and (max-width: 767px) {
+    .Header-wrapper .Header-icon-account {
+      display: none !important; } }
+  .Header-wrapper .Header-button {
+    right: 10px;
+    top: -10px;
+    background-color: transparent !important;
+    min-width: auto !important;
+    overflow: visible !important;
+    line-height: 36px !important;
+    height: 36px !important;
+    border: none !important; }
+    @media screen and (max-width: 767px) {
+      .Header-wrapper .Header-button {
+        display: none !important; } }
+    .Header-wrapper .Header-button span {
+      font-weight: 700 !important;
+      color: #806416;
+      overflow: visible !important;
+      padding: 0 !important; }
+    .Header-wrapper .Header-button:hover span {
+      color: #402701; }
+  .Header-wrapper .App-logo {
+    position: relative;
+    top: 43%;
+    transform: translateY(-50%); }
+
+.Header-popover {
+  width: 135px;
+  background-color: #33383B !important; }
+  .Header-popover div {
+    color: #d9e3e9; }
+  .Header-popover div [role='menu'] {
+    padding: 5px 0;
+    background-color: #33383B; }
+  .Header-popover div [role='menuitem'] {
+    line-height: 24px !important;
+    min-height: 24px !important;
+    background-color: #33383B !important; }
+    .Header-popover div [role='menuitem']:hover {
+      background-color: #7C878E !important;
+      opacity: 1; }
+  .Header-popover div [role='presentation'] {
+    width: 135px !important; }

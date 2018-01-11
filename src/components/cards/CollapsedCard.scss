@@ -1,0 +1,41 @@
+$grey-dark: #7c878e;
+$grey-lighter: #f5f8f9;
+
+.Material-cards {
+	&__collapsed {
+		font-family: 'Open Sans', sans-serif !important;
+
+		thead {
+			th {
+				background-color: $grey-lighter !important;
+				padding-left: 20px !important;
+				height: 30px !important;
+				color: $grey-dark !important;
+			}
+		}
+
+		tbody {
+			td {
+				font-size: 12px !important;
+
+				&:first-child {
+					font-weight: 600;
+				}
+
+				button {
+					color: #479cff !important;
+					margin-left: -3px;
+
+					span {
+						padding-left: 0 !important;
+						font-size: 12px !important;
+					}
+
+					svg {
+						color: $grey-dark !important;
+					}
+				}
+			}
+		}
+	}
+}

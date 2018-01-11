@@ -1,0 +1,131 @@
+.Material-cards {
+  display: block;
+  width: 100%; }
+  .Material-cards h3 {
+    font-weight: 600;
+    margin: 0 0 10px; }
+  .Material-cards small {
+    color: #7c878e; }
+  .Material-cards svg {
+    color: #7c878e !important;
+    position: relative;
+    top: 8px; }
+  .Material-cards__expanded {
+    height: 145px;
+    margin: 6px 0;
+    padding: 20px;
+    position: relative; }
+    @media screen and (max-width: 992px) {
+      .Material-cards__expanded {
+        height: 200px !important; } }
+    @media screen and (max-width: 767px) {
+      .Material-cards__expanded {
+        height: auto !important;
+        margin: 0 3px 6px;
+        padding: 12px 15px; } }
+    .Material-cards__expanded-teaser {
+      margin-bottom: 3px; }
+      @media screen and (max-width: 767px) {
+        .Material-cards__expanded-teaser {
+          display: none; } }
+    .Material-cards__expanded-notification small {
+      color: #33383B !important;
+      font-weight: 600 !important;
+      text-transform: uppercase; }
+    @media screen and (max-width: 767px) {
+      .Material-cards__expanded-notification {
+        display: none; } }
+    .Material-cards__expanded.red {
+      border-left: solid 5px #d0021B; }
+    .Material-cards__expanded.green {
+      border-left: solid 5px #417505; }
+  .Material-cards__expanded-right {
+    text-align: right; }
+    @media screen and (max-width: 767px) {
+      .Material-cards__expanded-right {
+        margin-top: 18px;
+        text-align: left; } }
+
+.Material-cards__expanded-actions {
+  position: relative !important;
+  top: 8px;
+  margin-right: -15px !important; }
+  @media screen and (max-width: 767px) {
+    .Material-cards__expanded-actions {
+      position: absolute !important;
+      right: 5px;
+      top: -10px; } }
+  @media screen and (min-width: 768px) {
+    .Material-cards__expanded-actions svg {
+      top: 0 !important; } }
+
+.Material-cards__expanded-actions-wrapper {
+  margin-top: -20px; }
+
+.Material-cards__expanded-actions-menu-wrapper {
+  background-color: #33383B !important;
+  padding-top: 30px !important; }
+  .Material-cards__expanded-actions-menu-wrapper button {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0 !important; }
+    .Material-cards__expanded-actions-menu-wrapper button svg {
+      color: #d9e3e9 !important;
+      width: 18px !important;
+      height: 18px !important; }
+  .Material-cards__expanded-actions-menu-wrapper div {
+    color: #d9e3e9; }
+  .Material-cards__expanded-actions-menu-wrapper hr {
+    width: 80%; }
+  .Material-cards__expanded-actions-menu-wrapper div [role='menu'] {
+    padding: 5px 0;
+    background-color: #33383B; }
+  .Material-cards__expanded-actions-menu-wrapper div [role='menuitem'] {
+    line-height: 24px !important;
+    min-height: 24px !important;
+    background-color: #33383B !important; }
+    .Material-cards__expanded-actions-menu-wrapper div [role='menuitem']:hover {
+      background-color: #7C878E !important;
+      opacity: 1; }
+
+.Material-cards__expanded-typical-gift strong {
+  color: #33383B;
+  font-weight: normal !important;
+  padding-right: 15px; }
+
+.Material-cards__expanded-state {
+  background-color: #4c9eff !important;
+  color: #fff !important; }
+  @media screen and (max-width: 767px) {
+    .Material-cards__expanded-state {
+      display: none !important; } }
+  .Material-cards__expanded-state span {
+    font-size: 12px !important; }
+  .Material-cards__expanded-state:hover {
+    background-color: #3b7bc8 !important; }
+
+.Material-cards__expanded-status {
+  padding: 10px 0; }
+  .Material-cards__expanded-status small {
+    padding-left: 15px; }
+  @media screen and (max-width: 767px) {
+    .Material-cards__expanded-status {
+      display: none; } }
+
+.Material-cards__expanded-deadline small {
+  font-weight: 600; }
+  .Material-cards__expanded-deadline small svg {
+    margin-right: 3px; }
+    @media screen and (max-width: 767px) {
+      .Material-cards__expanded-deadline small svg {
+        width: 19px !important; } }
+
+.Material-cards__expanded-deadline.red small, .Material-cards__expanded-deadline.red svg {
+  color: #d0021B !important; }
+
+.Material-cards__expanded-deadline.green small, .Material-cards__expanded-deadline.green svg {
+  color: #417505 !important; }

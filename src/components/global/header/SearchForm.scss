@@ -1,0 +1,81 @@
+$brown-dark: #402701;
+$brown: #806416;
+$yellow: #ffc72c;
+$yellow-light: #ffd86c;
+$yellow-lighter: #ffe9ac;
+$grey-darker: #33383B;
+$grey-dark: #7c878e;
+$grey: #9badb7;
+$grey-light: #bfd0da;
+$grey-lighter: #f5f8f9;
+
+.Header-search {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  z-index: 1200;
+
+  @media screen and (max-width: 1399px) {
+    left: 57.5%;
+  }
+
+  .Header-search-field-container {
+    height: 40px;
+    margin: 0 2px;
+    position: relative;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  //* Keyword *//
+  &__autocomplete {
+    height: 40px !important;
+    line-height: 18px !important;
+
+    div {
+      color: $grey-darker !important;
+      padding-left: 15px;
+    }
+
+    input {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 80%;
+      @media screen and (min-width: 768px) {
+        padding: 0 15px !important;
+      }
+    }
+  }
+
+  //* Submit Button *//
+  &__submit {
+    background-color: $brown !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    margin-left: 2px !important;
+    min-width: 40px !important;
+
+    &-icon {
+      fill: $yellow-lighter !important;
+    }
+
+    &:hover {
+      background-color: $brown-dark !important;
+    }
+
+    svg {
+      @media screen and (min-width: 768px) {
+        height: 21px !important;
+        width: 21px !important;
+      }
+    }
+  }
+}

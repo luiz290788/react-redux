@@ -1,0 +1,14 @@
+.Search-page__results {
+  color: #7c878e;
+  font-weight: 400;
+  margin-bottom: 1.4rem; }
+
+.Search-page__view {
+  text-align: right;
+  margin-right: -11px !important; }
+
+.Search-page__view-expanded.active svg, .Search-page__view-collapsed.active svg {
+  color: #7c878e !important; }
+
+.Search-page__view-expanded svg, .Search-page__view-collapsed svg {
+  color: #bfd0da !important; }

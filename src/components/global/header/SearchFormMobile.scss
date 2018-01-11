@@ -1,0 +1,81 @@
+$brown-dark: #402701;
+$brown: #806416;
+$yellow: #ffc72c;
+$yellow-light: #ffd86c;
+$yellow-lighter: #ffe9ac;
+$grey-darker: #33383B;
+$grey-dark: #7c878e;
+$grey: #9badb7;
+$grey-light: #bfd0da;
+$grey-lighter: #f5f8f9;
+
+.Header-search {
+	@media screen and (max-width: 767px) {
+		z-index: 12000;
+		width: 100% !important;
+		left: 50% !important;
+
+		> button:first-child {
+			background-color: #fff !important;
+			width: 40px !important;
+			height: 40px !important;
+			margin-left: 10px !important;
+
+			svg {
+				margin-top: -5px;
+				margin-left: -5px;
+			}
+		}
+
+		&__autocomplete {
+			background-color: #fff !important;
+
+			div{
+				padding-left: 0 !important;
+				color: $grey-light !important;
+			}
+
+			input {
+				padding-left: -15px !important;
+			}
+		}
+
+		&-mobile-field-container {
+			width: 100%;
+		}
+
+		&__open-search {
+			position: absolute !important;
+			right: 6px;
+			top: 7px;
+			z-index: 10000;
+
+			svg {
+				color: $brown !important;
+			}
+		}
+
+		&__submit {
+			margin-left: -1px !important;
+			background-color: #fff !important;
+			margin-right: 10px !important;
+			border: 0 !important;
+			overflow: visible !important;
+			line-height: 0px !important;
+
+			&:hover, &:focus {
+				background-color: #fff !important;
+			}
+
+			&-icon {
+				height: 24px !important;
+    		width: 24px !important;
+				fill: $grey-dark !important;
+			}
+
+			span {
+				display: none;
+			}
+		}
+	}
+}

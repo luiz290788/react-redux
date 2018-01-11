@@ -1,0 +1,211 @@
+$red: #d0021B;
+$blue: #4c9eff;
+$blue-dark: #3b7bc8;
+$green: #417505;
+$grey-darker: #33383B;
+$grey-dark: #7c878e;
+
+.Material-cards {
+  display: block;
+  width: 100%;
+
+  h3 {
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+
+  small {
+    color: $grey-dark;
+  }
+
+  svg {
+    color: $grey-dark !important;
+    position: relative;
+    top: 8px;
+  }
+
+  &__expanded {
+    height: 145px;
+    margin: 6px 0;
+    padding: 20px;
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+      height: 200px !important;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: auto !important;
+      margin: 0 3px 6px;
+      padding: 12px 15px;
+    }
+
+    &-teaser {
+      margin-bottom: 3px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &-notification {
+      small {
+        color: $grey-darker !important;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &.red {
+      border-left: solid 5px $red;
+    }
+
+    &.green {
+      border-left: solid 5px $green;
+    }
+  }
+
+  &__expanded-right {
+    text-align: right;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 18px;
+      text-align: left;
+    }
+  }
+}
+
+.Material-cards__expanded {
+  &-actions {
+    position: relative !important;
+    top: 8px;
+    margin-right: -15px !important;
+
+    @media screen and (max-width: 767px) {
+      position: absolute !important;
+      right: 5px;
+      top: -10px;
+    }
+
+    svg {
+      @media screen and (min-width: 768px) {
+        top: 0 !important;
+      }
+    }
+  }
+
+  &-actions-wrapper {
+    margin-top: -20px;
+  }
+
+  &-actions-menu-wrapper {
+    background-color: $grey-darker !important;
+    padding-top: 30px !important;
+
+    button {
+      position: absolute !important;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      width: 28px !important;
+      height: 28px !important;
+      padding: 0 !important;
+
+      svg {
+        color: #d9e3e9 !important;
+        width: 18px !important;
+        height: 18px !important;
+      }
+    }
+
+    div{
+      color: #d9e3e9;
+    }
+
+    hr {
+      width: 80%;
+    }
+
+    div [role='menu'] {
+      padding: 5px 0;
+      background-color: $grey-darker;
+    }
+
+    div [role='menuitem'] {
+      line-height: 24px !important;
+      min-height: 24px !important;
+      background-color: $grey-darker !important;
+
+      &:hover {
+        background-color: #7C878E !important;
+        opacity: 1;
+      }
+    }
+  }
+
+  &-typical-gift {
+    strong {
+      color: $grey-darker;
+      font-weight: normal !important;
+      padding-right: 15px;
+    }
+  }
+
+  &-state {
+    background-color: $blue !important;
+    color: #fff !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+
+    span {
+      font-size: 12px !important;
+    }
+
+    &:hover {
+      background-color: $blue-dark !important;
+    }
+  }
+
+  &-status {
+    padding: 10px 0;
+
+    small {
+      padding-left: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &-deadline {
+    small {
+      font-weight: 600;
+
+      svg {
+        margin-right: 3px;
+        @media screen and (max-width: 767px) {
+          width: 19px !important;
+        }
+      }
+    }
+
+    &.red {
+      small, svg {
+        color: $red !important;
+      }
+    }
+
+    &.green {
+      small, svg {
+        color: $green !important;
+      }
+    }
+  }
+}

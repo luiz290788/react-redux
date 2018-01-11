@@ -1,0 +1,28 @@
+$grey-dark: #7c878e;
+$grey-light: #bfd0da;
+
+.Search-page {
+	&__results {
+		color: $grey-dark;
+		font-weight: 400;
+		margin-bottom: 1.4rem;
+	}
+
+	&__view {
+		text-align: right;
+		margin-right: -11px !important;
+	}
+
+	&__view-expanded,
+	&__view-collapsed {
+		&.active {
+			svg {
+				color: $grey-dark !important;
+			}
+		}
+
+		svg {
+			color: $grey-light !important;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+$brown: #806416;
+$brown-dark: #402701;
+$grey-dark: #33383B;
+
+.Header-wrapper {
+  background-color: #ffc72c !important;
+  height: 60px;
+
+  .Header-icon,
+  .Header-icon-account {
+    fill: $brown !important;
+
+    &:hover {
+      fill: $brown-dark !important;
+    }
+  }
+
+  .Header-icon-account {
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+  }
+
+  .Header-button {
+    right: 10px;
+    top: -10px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    min-width: auto !important;
+    overflow: visible !important;
+    line-height: 36px !important;
+    height: 36px !important;
+    border: none !important;
+
+    @media screen and (max-width: 767px) {
+      display: none !important;
+    }
+
+    span {
+      font-weight: 700 !important;
+      color: $brown;
+      overflow: visible !important;
+      padding: 0 !important;
+    }
+
+    &:hover {
+      span {
+        color: $brown-dark;
+      }
+    }
+  }
+
+  .App-logo {
+    position: relative;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+}
+
+.Header-popover {
+  width: 135px;
+  background-color: $grey-dark !important;
+
+  div{
+    color: #d9e3e9;
+  }
+
+  div [role='menu'] {
+    padding: 5px 0;
+    background-color: $grey-dark;
+  }
+
+  div [role='menuitem'] {
+    line-height: 24px !important;
+    min-height: 24px !important;
+    background-color: $grey-dark !important;
+
+    &:hover {
+      background-color: #7C878E !important;
+      opacity: 1;
+    }
+  }
+
+  div [role='presentation'] {
+    width: 135px !important;
+  }
+}

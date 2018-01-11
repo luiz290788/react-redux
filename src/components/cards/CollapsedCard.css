@@ -1,0 +1,19 @@
+.Material-cards__collapsed {
+  font-family: 'Open Sans', sans-serif !important; }
+  .Material-cards__collapsed thead th {
+    background-color: #f5f8f9 !important;
+    padding-left: 20px !important;
+    height: 30px !important;
+    color: #7c878e !important; }
+  .Material-cards__collapsed tbody td {
+    font-size: 12px !important; }
+    .Material-cards__collapsed tbody td:first-child {
+      font-weight: 600; }
+    .Material-cards__collapsed tbody td button {
+      color: #479cff !important;
+      margin-left: -3px; }
+      .Material-cards__collapsed tbody td button span {
+        padding-left: 0 !important;
+        font-size: 12px !important; }
+      .Material-cards__collapsed tbody td button svg {
+        color: #7c878e !important; }

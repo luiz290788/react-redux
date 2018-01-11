@@ -1,0 +1,33 @@
+.Search-page__facets {
+  position: relative;
+  margin-top: -17px; }
+  @media screen and (min-width: 1024px) {
+    .Search-page__facets {
+      padding-right: 54px; } }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .Search-page__facets {
+      padding-right: 20px; } }
+  .Search-page__facets small {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: inline-block; }
+  .Search-page__facets p {
+    position: relative; }
+    .Search-page__facets p button {
+      min-width: 36px !important;
+      position: absolute !important;
+      right: 0 !important;
+      top: -10px !important; }
+      .Search-page__facets p button span {
+        color: #7c878e;
+        font-size: 12px !important;
+        padding-right: 7px !important;
+        padding-left: 7px !important; }
+  .Search-page__facets-item > div > div {
+    font-weight: 600;
+    margin: -10px -6px -12px -6px !important; }
+  .Search-page__facets-item-child {
+    line-height: 20px !important; }
+    .Search-page__facets-item-child div div {
+      padding: 3px 6px !important; }
