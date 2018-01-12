@@ -5,10 +5,6 @@ import MediaQuery from 'react-responsive'
 import { MuiThemeProvider, Snackbar } from 'material-ui'
 import { Grid } from 'react-flexbox-grid'
 
-// Redux.
-import { connect } from 'react-redux'
-import { toggleLeftMenu } from '../actions'
-
 // Custom global components.
 import LeftMenu from './global/drawer/LeftMenu'
 import HeaderBar from './global/header/HeaderBar'
@@ -94,16 +90,13 @@ class App extends Component {
       <MuiThemeProvider>
         <div className="App">
           {/* Left Drawer Menu */}
-          <LeftMenu
-            onCloseIconButtonClick={ this.props.toggleLeftMenu }
-            showMenu={ this.props.leftMenu.opened }
-          />
+          <LeftMenu />
           {/* ENDOF: Left Drawer Menu */}
 
           {/* Header Components */}
           <header className="App-header">
             {/* Header AppBar */}
-            <HeaderBar onLeftIconButtonClick={ this.props.toggleLeftMenu } />
+            <HeaderBar />
             {/* ENDOF: Header AppBar */}
 
             {/* Search From Component */}
@@ -156,15 +149,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-  leftMenu: state.leftMenu,
-})
-
-const mapDispatchToProps = {
-  toggleLeftMenu
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(withRouter(App))
+export default withRouter(App)

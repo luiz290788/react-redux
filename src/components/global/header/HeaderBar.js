@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { AppBar, FlatButton, IconButton, Menu, MenuItem, Popover } from 'material-ui'
 import { Menu as MenuIcon, AccountCircle } from 'material-ui-icons'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { toggleLeftMenu } from '../../../actions'
 import logo from '../../../logo.svg'
 import './HeaderBar.css'
 
@@ -77,4 +80,7 @@ class HeaderBar extends Component {
   }
 }
 
-export default HeaderBar
+export default connect(
+  () => ({}),
+  dispatch => bindActionCreators({ onLeftIconButtonClick: toggleLeftMenu }, dispatch)
+)(HeaderBar)

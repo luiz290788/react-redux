@@ -2,6 +2,10 @@ import React from 'react'
 import { Drawer, IconButton, MenuItem } from 'material-ui'
 import { Close } from 'material-ui-icons'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
+import { toggleLeftMenu } from '../../../actions'
 import './LeftMenu.css'
 
 function LeftMenu(props) {
@@ -36,4 +40,15 @@ function LeftMenu(props) {
   )
 }
 
-export default LeftMenu
+const mapStateToProps = (state, ownProps) => ({
+  showMenu: state.leftMenu.opened,
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  onCloseIconButtonClick: toggleLeftMenu
+}, dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LeftMenu)
